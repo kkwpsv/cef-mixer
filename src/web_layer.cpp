@@ -1165,7 +1165,7 @@ shared_ptr<Layer> create_web_layer(
 	
 	// we are going to issue calls to SendExternalBeginFrame
 	// and CEF will not use its internal BeginFrameTimer in this case
-	window_info.external_begin_frame_enabled = true;
+	window_info.external_begin_frame_enabled = false;
 
 	CefBrowserSettings settings;
 
